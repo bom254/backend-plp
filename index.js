@@ -27,7 +27,7 @@ app.use(
 
 //routes
 app.get('/', (req,res) =>{
-    res.sendFile
+    res.sendFile(path.join(__dirname, 'public', 'register.html'));
 })
 
 app.use('/auth', authRoutes)
